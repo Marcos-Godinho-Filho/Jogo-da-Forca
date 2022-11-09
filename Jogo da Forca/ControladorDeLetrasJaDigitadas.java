@@ -44,7 +44,7 @@ public class ControladorDeLetrasJaDigitadas implements Cloneable
 
         for (int i = 0; i < letrasSeparadasPorVirgula.length(); i += 1)
         {
-            letrasSeparadasPorVirgula = this.letrasJaDigitadas.charAt(i);
+            letrasSeparadasPorVirgula = String.valueOf(this.letrasJaDigitadas.charAt(i));
 
             if (i != letrasSeparadasPorVirgula.length() - 1)
                 letrasSeparadasPorVirgula += ",";
@@ -106,7 +106,7 @@ public class ControladorDeLetrasJaDigitadas implements Cloneable
     {
         // criar uma c�pia do this com o construtor de c�pia e retornar
         
-        ControladorDeLetrasJaDigitadas c;
+        ControladorDeLetrasJaDigitadas c = null;
 
         try 
         {
